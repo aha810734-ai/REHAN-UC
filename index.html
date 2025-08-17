@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REHAN Carder - PUBG UC Store</title>
+    <meta name="description" content="Premium PUBG UC Store - Buy 10K to 80K UC bundles instantly via WhatsApp">
+    <meta name="theme-color" content="#ff6b35">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <img src="https://i.postimg.cc/v80yJMN6/Gemini-Generated-Image-pkqccqpkqccqpkqc.png" alt="PUBG Banner" class="banner-image">
+        <div class="header-overlay">
+            <h1 class="site-title">REHAN Carder</h1>
+            <p class="site-subtitle">Premium PUBG UC Store</p>
+        </div>
+    </header>
+
+    <!-- UC Bundles Section -->
+    <section class="bundles-section">
+        <h2 class="section-title">Choose Your UC Bundle</h2>
+        <div class="bundles-grid">
+            <!-- 10K UC -->
+            <div class="bundle-card" data-uc="10K">
+                <img src="https://i.postimg.cc/TwT9qjRB/Chat-GPT-Image-Aug-16-2025-10-39-40-AM.png" alt="10K UC" class="bundle-image">
+                <h3 class="bundle-title">10K UC</h3>
+                <button class="buy-button" onclick="openWhatsApp('10K')">
+                    <i class="fab fa-whatsapp"></i> Buy Now
+                </button>
+            </div>
+
+            <!-- 20K UC -->
+            <div class="bundle-card" data-uc="20K">
+                <img src="https://i.postimg.cc/q71QkbVQ/Chat-GPT-Image-Aug-16-2025-10-32-45-AM.png" alt="20K UC" class="bundle-image">
+                <h3 class="bundle-title">20K UC</h3>
+                <button class="buy-button" onclick="openWhatsApp('20K')">
+                    <i class="fab fa-whatsapp"></i> Buy Now
+                </button>
+            </div>
+
+            <!-- 30K UC -->
+            <div class="bundle-card" data-uc="30K">
+                <img src="https://postimg.cc/ctdsjD1k" alt="30K UC" class="bundle-image">
+                <h3 class="bundle-title">30K UC</h3>
+                <button class="buy-button" onclick="openWhatsApp('30K')">
+                    <i class="fab fa-whatsapp"></i> Buy Now
+                </button>
+            </div>
+
+            <!-- 40K UC -->
+            <div class="bundle-card" data-uc="40K">
+                <img src="https://postimg.cc/ctdsjD1k" alt="40K UC" class="bundle-image">
+                <h3 class="bundle-title">40K UC</h3>
+                <button class="buy-button" onclick="openWhatsApp('40K')">
+                    <i class="fab fa-whatsapp"></i> Buy Now
+                </button>
+            </div>
+
+            <!-- 50K UC -->
+            <div class="bundle-card" data-uc="50K">
+                <img src="https://postimg.cc/ctdsjD1k" alt="50K UC" class="bundle-image">
+                <h3 class="bundle-title">50K UC</h3>
+                <button class="buy-button" onclick="openWhatsApp('50K')">
+                    <i class="fab fa-whatsapp"></i> Buy Now
+                </button>
+            </div>
+
+            <!-- 60K UC -->
+            <div class="bundle-card" data-uc="60K">
+                <img src="https://postimg.cc/ctdsjD1k" alt="60K UC" class="bundle-image">
+                <h3 class="bundle-title">60K UC</h3>
+                <button class="buy-button" onclick="openWhatsApp('60K')">
+                    <i class="fab fa-whatsapp"></i> Buy Now
+                </button>
+            </div>
+
+            <!-- 70K UC -->
+            <div class="bundle-card" data-uc="70K">
+                <img src="https://postimg.cc/ctdsjD1k" alt="70K UC" class="bundle-image">
+                <h3 class="bundle-title">70K UC</h3>
+                <button class="buy-button" onclick="openWhatsApp('70K')">
+                    <i class="fab fa-whatsapp"></i> Buy Now
+                </button>
+            </div>
+
+            <!-- 80K UC -->
+            <div class="bundle-card" data-uc="80K">
+                <img src="https://postimg.cc/ctdsjD1k" alt="80K UC" class="bundle-image">
+                <h3 class="bundle-title">80K UC</h3>
+                <button class="buy-button" onclick="openWhatsApp('80K')">
+                    <i class="fab fa-whatsapp"></i> Buy Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section">
+        <h2 class="section-title">Customer Reviews</h2>
+        
+        <!-- Review Form -->
+        <div class="review-form-container">
+            <h3>Leave a Review</h3>
+            <form id="reviewForm" class="review-form">
+                <div class="form-group">
+                    <input type="text" id="reviewerName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <select id="reviewRating" required>
+                        <option value="">Select Rating</option>
+                        <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                        <option value="4">⭐⭐⭐⭐ Very Good</option>
+                        <option value="3">⭐⭐⭐ Good</option>
+                        <option value="2">⭐⭐ Fair</option>
+                        <option value="1">⭐ Poor</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="reviewMessage" placeholder="Share your experience..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">
+                    <i class="fas fa-paper-plane"></i> Submit Review
+                </button>
+            </form>
+        </div>
+
+        <!-- Reviews Display -->
+        <div id="reviewsContainer" class="reviews-container">
+            <!-- Reviews will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 REHAN Carder. All rights reserved.</p>
+        <p>Contact: <a href="https://wa.me/923295484764">+92 329 5484764</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
