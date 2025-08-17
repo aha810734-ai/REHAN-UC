@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REHAN Carder - UC Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <img src="https://i.postimg.cc/v80yJMN6/Gemini-Generated-Image-pkqccqpkqccqpkqc.png" alt="PUBG Banner" class="banner-image">
+        <h1 class="site-title">REHAN Carder</h1>
+    </header>
+
+    <!-- UC Bundles Section -->
+    <section class="uc-bundles">
+        <h2>UC Bundles</h2>
+        <div class="bundles-grid">
+            <div class="bundle-card" data-uc="10K">
+                <img src="https://i.postimg.cc/TwT9qjRB/Chat-GPT-Image-Aug-16-2025-10-39-40-AM.png" alt="10K UC">
+                <h3>10K UC</h3>
+                <button class="buy-btn" onclick="openWhatsApp('10K')">Buy Now</button>
+            </div>
+            
+            <div class="bundle-card" data-uc="20K">
+                <img src="https://i.postimg.cc/q71QkbVQ/Chat-GPT-Image-Aug-16-2025-10-32-45-AM.png" alt="20K UC">
+                <h3>20K UC</h3>
+                <button class="buy-btn" onclick="openWhatsApp('20K')">Buy Now</button>
+            </div>
+            
+            <div class="bundle-card" data-uc="30K">
+                <img src="https://i.postimg.cc/ctdsjD1k" alt="30K UC">
+                <h3>30K UC</h3>
+                <button class="buy-btn" onclick="openWhatsApp('30K')">Buy Now</button>
+            </div>
+            
+            <div class="bundle-card" data-uc="40K">
+                <img src="https://i.postimg.cc/ctdsjD1k" alt="40K UC">
+                <h3>40K UC</h3>
+                <button class="buy-btn" onclick="openWhatsApp('40K')">Buy Now</button>
+            </div>
+            
+            <div class="bundle-card" data-uc="50K">
+                <img src="https://i.postimg.cc/ctdsjD1k" alt="50K UC">
+                <h3>50K UC</h3>
+                <button class="buy-btn" onclick="openWhatsApp('50K')">Buy Now</button>
+            </div>
+            
+            <div class="bundle-card" data-uc="60K">
+                <img src="https://i.postimg.cc/ctdsjD1k" alt="60K UC">
+                <h3>60K UC</h3>
+                <button class="buy-btn" onclick="openWhatsApp('60K')">Buy Now</button>
+            </div>
+            
+            <div class="bundle-card" data-uc="70K">
+                <img src="https://i.postimg.cc/ctdsjD1k" alt="70K UC">
+                <h3>70K UC</h3>
+                <button class="buy-btn" onclick="openWhatsApp('70K')">Buy Now</button>
+            </div>
+            
+            <div class="bundle-card" data-uc="80K">
+                <img src="https://i.postimg.cc/ctdsjD1k" alt="80K UC">
+                <h3>80K UC</h3>
+                <button class="buy-btn" onclick="openWhatsApp('80K')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section">
+        <h2>Customer Reviews</h2>
+        
+        <!-- Review Form -->
+        <form class="review-form" onsubmit="addReview(event)">
+            <h3>Leave a Review</h3>
+            <input type="text" id="reviewerName" placeholder="Your Name" required>
+            <select id="reviewRating" required>
+                <option value="">Select Rating</option>
+                <option value="5">★★★★★ (5 Stars)</option>
+                <option value="4">★★★★☆ (4 Stars)</option>
+                <option value="3">★★★☆☆ (3 Stars)</option>
+                <option value="2">★★☆☆☆ (2 Stars)</option>
+                <option value="1">★☆☆☆☆ (1 Star)</option>
+            </select>
+            <textarea id="reviewMessage" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Submit Review</button>
+        </form>
+
+        <!-- Reviews Display -->
+        <div class="reviews-container" id="reviewsContainer">
+            <!-- Reviews will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
